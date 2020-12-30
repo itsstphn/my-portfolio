@@ -22,7 +22,37 @@ main {
   overflow: hidden;
 }
 
+main .open-menu {
+  height: 263px;
+  padding: 1rem;
+  padding-right: 0;
+  position: absolute;
+  background-color: white;
+}
+
+main .open-menu .menu-nav {
+  margin-top: 2.5rem;
+}
+
+main .open-menu .menu-nav li {
+  margin-left: 23rem;
+  padding-left: 1rem;
+  white-space: nowrap;
+  line-height: 48px;
+  list-style: none;
+  font-size: 2rem;
+  background-color: #2f2f2f;
+  color: white;
+  margin-bottom: 2px;
+  height: 3rem;
+  font-family: 'Cairo', sans-serif;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+  width: 100%;
+}
+
 main .intro {
+  height: 263px;
   padding: 1rem;
   padding-bottom: .7rem;
   display: -ms-grid;
@@ -62,8 +92,28 @@ main .menu {
   position: absolute;
   top: 25px;
   right: 25px;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
 }
 
 main .hero-img {
   width: 100%;
+}
+
+.animate-menu {
+  -webkit-transform: scaleX(-1) translateX(285px);
+          transform: scaleX(-1) translateX(285px);
+}
+
+.animate-li {
+  -webkit-transform: translateX(-310px);
+          transform: translateX(-310px);
+}
+
+.hide {
+  display: none !important;
+}
+
+.sub-intro {
+  height: 263px;
 }

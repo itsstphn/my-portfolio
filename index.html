@@ -4,17 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
     <title>itsstphn</title>
 </head>
 <body>
     <main>
+        <div class="open-menu">
+            <ul class="menu-nav">
+                <li class="nav">Home</li>
+                <li class="nav">About Me</li>
+                <li class="nav">My Projects</li>
+                <li class="nav">Contact</li>
+            </ul>
+        </div>
+        <div class="sub-intro hide">
+
+        </div>
         <div class="intro">
-            <h1>Hey, <br>Its Stephen.</h1>
+            <h1>Hey, <br>It's Stephen.</h1>
             <div class="text-bg-effect"><span>Hey, <br>It's Stephen.</span></div>
             <p>I build things on the web.</p>
         </div>
-        <div class="menu" onclick="openMenu()"><img src="img/menu-open.svg" alt=""></div>
+        <div class="menu" onclick="toggleMenu()"><img class="menu-icon" src="img/menu-open.svg" alt=""></div>
         <img class="hero-img" src="img/anime-hero.png" alt="anime">
     </main>
 </body>

@@ -18,12 +18,44 @@ main {
     grid-template-rows: 1fr auto;
     position: relative;
     overflow: hidden;
+
+    .open-menu {
+        height: 263px;
+        padding: 1rem;
+        padding-right: 0;
+        position: absolute;
+        background-color: white;
+        
+        .menu-nav {
+            margin-top: 2.5rem;
+            
+            
+            li {
+                margin-left: 23rem;
+                padding-left: 1rem;
+                white-space: nowrap;
+                line-height: 48px;
+                list-style: none;
+                font-size: 2rem;
+                background-color: #2f2f2f;
+                color: white;
+                margin-bottom: 2px;
+                height: 3rem;
+                font-family: 'Cairo', sans-serif;
+                transition: all .4s ease-in-out;
+                width: 100%;
+              
+            }
+        }
+    }
     
     .intro {
+        height: 263px;
         padding: 1rem;
         padding-bottom: .7rem;
         display: grid;
         position: relative;
+        
 
         h1 {
             font-family: 'Roboto';
@@ -60,10 +92,30 @@ main {
         position: absolute;
         top: 25px;
         right: 25px;
+        transition: all .3s ease;
     }
 
 
     .hero-img {
         width: 100%;
     }
+}
+
+
+.animate-menu {
+    
+    transform: scaleX(-1) translateX(285px);
+}
+
+.animate-li {
+    transform: translateX(-310px);
+}
+
+.hide {
+    display: none !important;
+}
+
+.sub-intro {
+    
+    height: 263px;
 }
