@@ -3,14 +3,16 @@ const menu_li = document.querySelectorAll('.nav');
 const intro = document.querySelector('.intro');
 const openMenu = document.querySelector('.open-menu');
 const subIntro = document.querySelector('.sub-intro');
+const menu_bg = document.querySelector('.menu-bg');
 
-console.log(menu_li);
 
 function toggleMenu() {
 
     menu.classList.toggle('animate-menu');
-    // menu_li.forEach(item => {
-    // item.classList.toggle('animate-li');
-    // });
-    openMenu.classList.toggle('animate-li');
+    menu_bg.classList.toggle('animate-ul');
+    
+    // openMenu.classList.toggle('animate-ul');
+    menu_li.forEach(item => {
+        item.classList.toggle('animate-li');
+    })
 }

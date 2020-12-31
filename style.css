@@ -32,9 +32,7 @@ main .open-menu {
   background-color: #ffffff;
   margin-left: 23.5rem;
   width: 400px;
-  -webkit-transition: all .4s ease-in-out;
-  transition: all .4s ease-in-out;
-  z-index: 1;
+  z-index: 2;
 }
 
 main .open-menu .menu-nav {
@@ -53,7 +51,41 @@ main .open-menu .menu-nav li {
   height: 3rem;
   font-family: 'Cairo', sans-serif;
   width: 100%;
-  margin-left: 2rem;
+  margin-left: 3rem;
+  z-index: 5;
+}
+
+main .open-menu .menu-nav li:nth-child(1) {
+  -webkit-transition: all .4s ease-out;
+  transition: all .4s ease-out;
+}
+
+main .open-menu .menu-nav li:nth-child(2) {
+  -webkit-transition: all .45s ease-out;
+  transition: all .45s ease-out;
+}
+
+main .open-menu .menu-nav li:nth-child(3) {
+  -webkit-transition: all .5s ease-out;
+  transition: all .5s ease-out;
+}
+
+main .open-menu .menu-nav li:nth-child(4) {
+  -webkit-transition: all .55s ease-out;
+  transition: all .55s ease-out;
+}
+
+main .menu-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-left: 23.5rem;
+  -webkit-transition: all .6s ease-in-out;
+  transition: all .6s ease-in-out;
+  height: 263px;
+  width: 400px;
+  background-color: #fff;
+  z-index: 1;
 }
 
 main .intro {
@@ -109,6 +141,11 @@ main .hero-img {
 .animate-menu {
   -webkit-transform: scaleX(-1) translateX(285px);
           transform: scaleX(-1) translateX(285px);
+}
+
+.animate-ul {
+  -webkit-transform: translateX(-375px);
+          transform: translateX(-375px);
 }
 
 .animate-li {
