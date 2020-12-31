@@ -136,6 +136,8 @@ main .menu {
 
 main .hero-img {
   width: 100%;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
 }
 
 .animate-menu {
@@ -151,6 +153,11 @@ main .hero-img {
 .animate-li {
   -webkit-transform: translateX(-375px);
           transform: translateX(-375px);
+}
+
+.image-darken {
+  -webkit-filter: brightness(75%);
+          filter: brightness(75%);
 }
 
 .sub-intro {

@@ -131,6 +131,7 @@ main {
 
     .hero-img {
         width: 100%;
+        transition: all .5s ease;
     }
 }
 
@@ -146,6 +147,10 @@ main {
 
 .animate-li {
     transform: translateX(-375px);
+}
+
+.image-darken {
+    filter: brightness(75%);
 }
 
 
