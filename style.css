@@ -27,15 +27,21 @@ main .open-menu {
   padding: 1rem;
   padding-right: 0;
   position: absolute;
-  background-color: white;
+  top: 0;
+  left: 0;
+  background-color: #ffffff;
+  margin-left: 23.5rem;
+  width: 400px;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+  z-index: 1;
 }
 
 main .open-menu .menu-nav {
-  margin-top: 2.5rem;
+  margin-top: 2.7rem;
 }
 
 main .open-menu .menu-nav li {
-  margin-left: 23rem;
   padding-left: 1rem;
   white-space: nowrap;
   line-height: 48px;
@@ -46,9 +52,8 @@ main .open-menu .menu-nav li {
   margin-bottom: 2px;
   height: 3rem;
   font-family: 'Cairo', sans-serif;
-  -webkit-transition: all .4s ease-in-out;
-  transition: all .4s ease-in-out;
   width: 100%;
+  margin-left: 2rem;
 }
 
 main .intro {
@@ -94,6 +99,7 @@ main .menu {
   right: 25px;
   -webkit-transition: all .3s ease;
   transition: all .3s ease;
+  z-index: 2;
 }
 
 main .hero-img {
@@ -106,12 +112,8 @@ main .hero-img {
 }
 
 .animate-li {
-  -webkit-transform: translateX(-310px);
-          transform: translateX(-310px);
-}
-
-.hide {
-  display: none !important;
+  -webkit-transform: translateX(-375px);
+          transform: translateX(-375px);
 }
 
 .sub-intro {

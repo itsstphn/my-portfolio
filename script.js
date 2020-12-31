@@ -7,12 +7,10 @@ const subIntro = document.querySelector('.sub-intro');
 console.log(menu_li);
 
 function toggleMenu() {
-    // intro.style.display = 'none';
-    // intro.innerHTML = '';
-    intro.classList.toggle('hide');
-    subIntro.classList.toggle('hide');
+
     menu.classList.toggle('animate-menu');
-    menu_li.forEach(item => {
-    item.classList.toggle('animate-li');
-    });
+    // menu_li.forEach(item => {
+    // item.classList.toggle('animate-li');
+    // });
+    openMenu.classList.toggle('animate-li');
 }
